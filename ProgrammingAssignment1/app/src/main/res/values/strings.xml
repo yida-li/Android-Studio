@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProgrammingAssignment1</string>
+    <string name="profileSharedPreferencesFile">profile-file</string>
+    <string name="profileNameKeySharedPreferences">profile-name-key</string>
+    <string name="profileIDSharedPreferences">profile-id-key</string>
+    <string name="profileAgeSharedPreferences">profile-age-key</string>
+</resources>
