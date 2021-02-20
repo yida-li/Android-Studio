@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tutorial3</string>
+    <string name="profileSharedPreferencesFile">profile-file</string>
+    <string name="profileNameKeySharedPreferences">profile-name-key</string>
+</resources>
