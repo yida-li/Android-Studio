@@ -17,10 +17,9 @@ public class helloActivity extends AppCompatActivity {
 
         message = findViewById(R.id.message);
 
+
         Intent intent = getIntent();
-
         String mesiah = intent.getStringExtra(getString(R.string.yida));
-
         message.setText(mesiah);
 
     }

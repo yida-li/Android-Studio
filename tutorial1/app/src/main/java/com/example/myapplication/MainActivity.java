@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button goToButton;
     private Button Eden;
+
     private EditText sayHelloEditText;
     private TextView sandcastle;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         goToButton= findViewById(R.id.goToButton);
         sayHelloEditText = findViewById(R.id.sayHelloEditText);
+
         Eden= findViewById(R.id.Eden);
         sandcastle = findViewById(R.id.sandcastle);
 
