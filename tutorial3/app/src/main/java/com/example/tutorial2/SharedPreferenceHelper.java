@@ -7,9 +7,11 @@ public class SharedPreferenceHelper {
 
 
     private Context context;
-
-
     private SharedPreferences sharedPreferences;
+
+
+
+
 
     public SharedPreferenceHelper(Context context) {
         this.context=context; // closest one in the scope as for this-> pointer
@@ -22,6 +24,11 @@ public class SharedPreferenceHelper {
     public String getName(){
        return sharedPreferences.getString(context.getString(R.string.profileNameKeySharedPreferences), null);
     }
+    public int getAge(){
+        return 0;
+    }
+
+
 
     public void saveName(String name){
         SharedPreferences.Editor editor = sharedPreferences.edit();

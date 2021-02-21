@@ -18,6 +18,8 @@ public class ProfileActivity extends AppCompatActivity {
     private EditText NameEditText;
     private Button saveButton;
 
+
+
     private SharedPreferenceHelper help;
 
 
@@ -26,16 +28,12 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
         Log.i(TAG,"On create is acccessed");
 
 
 
+
         help = new SharedPreferenceHelper(this);
-
-
-
-
         NameEditText=findViewById(R.id.NameEditText);
 
         String name =help.getName();
