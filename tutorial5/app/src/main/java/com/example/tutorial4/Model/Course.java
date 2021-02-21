@@ -14,11 +14,9 @@ public class Course {
 
     @Override
     public String toString() { //  automatically generated toString model, talk about heuristic coding
-        return "Course{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", code='" + code + '\'' +
-                '}';
+        return
+                " title = '" + title + '\'' +
+                ", code = '" + code + '\'' ;
     }
 
     public long getId() {

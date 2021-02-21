@@ -12,6 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+.build.gradle
 .gradelew
 .gradelew.bat
 .settings.gradle
@@ -26,5 +27,5 @@ gradle.properties
 gradlew.bat
 gradlew
 settings.gradle
-
 local.properties
+tutorial5/app/libs

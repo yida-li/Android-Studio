@@ -1,4 +1,4 @@
-package com.example.tutorial4;
+package com.example.tutorial5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.tutorial4.Database.DatabaseHelper;
-import com.example.tutorial4.Model.Course;
+import com.example.tutorial5.Database.DatabaseHelper;
+import com.example.tutorial5.Model.Course;
 
 import java.util.List;
 
