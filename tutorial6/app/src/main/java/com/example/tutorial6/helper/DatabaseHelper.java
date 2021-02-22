@@ -225,6 +225,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 new String[] { String.valueOf(todo.getId()) });
     }
 
+
+
     /**
      * Deleting a todo
      */

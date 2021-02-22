@@ -1,7 +1,8 @@
-package com.example.tutorial4.Database;
+package com.example.programmingassignment2.Database;
 
 public class Config {
-    // hold some information to be used in the databasehelper
+
+
 
     public static final String DATABASE_NAME = "courses-db";
 
@@ -12,7 +13,7 @@ public class Config {
     public static final String COLUMN_COURSE_CODE = "code";
 
     public static final String TABLE_ASSIGNMENT_NAME = "assignment";
-    //public static final String COLUMN_ASSIGNMENT_Key= "key"; // unused
+    public static final String COLUMN_ASSIGNMENT_Key= "key";
     public static final String COLUMN_ASSIGNMENT_ID= "id";
     public static final String COLUMN_ASSIGNMENT_GRADE = "grade";
 

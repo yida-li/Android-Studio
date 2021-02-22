@@ -31,12 +31,12 @@ private Button cancelButton;
         View view = inflater.inflate(R.layout.fragment_insert_course, container);
 
         courseTitleEditText= view.findViewById(R.id.courseTitleEditText);
-                courseCodeTitleEditText = view.findViewById(R.id.courseCodeEditText);
+        courseCodeTitleEditText = view.findViewById(R.id.courseCodeEditText);
         saveButton = view.findViewById(R.id.saveButton);
-                cancelButton = view.findViewById(R.id.cancelButton);
+        cancelButton = view.findViewById(R.id.cancelButton);
 
 
-                cancelButton.setOnClickListener(new View.OnClickListener() {
+        cancelButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Objects.requireNonNull(getDialog()).dismiss();
@@ -59,7 +59,7 @@ private Button cancelButton;
                         dbHelper.insertCourse(course);
 
 
-                        //navigat simply
+                        //navigate back without having to refresh app
                         ((MainActivity)getActivity()).loadCourses();
 
 

@@ -8,13 +8,14 @@
 
     <ListView
         android:id="@+id/coursesListView"
-        android:layout_width="0dp"
+        android:layout_width="413dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/AddCourseFloatingActionButton"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.661" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/AddCourseFloatingActionButton"
@@ -27,7 +28,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@android:drawable/ic_input_add"
-        android:focusable="true" />
+        tools:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="253dp"
+        android:layout_height="42dp"
+        android:text="Grade Points Average :"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:text="        N/A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/coursesListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

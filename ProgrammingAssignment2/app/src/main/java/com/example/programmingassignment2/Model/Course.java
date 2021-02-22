@@ -1,13 +1,15 @@
-package com.example.tutorial4.Model;
+package com.example.programmingassignment2.Model;
+
+
 import java.io.Serializable;
-@SuppressWarnings("serial")
+
 public class Course implements Serializable {
 
     private long id;
     private String title;
     private String code;
 
-    public Course(){
+    public Course() {
 
     }
 
@@ -18,10 +20,10 @@ public class Course implements Serializable {
     }
 
     @Override
-    public String toString() {
-        return "Course{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
+    public String toString() { //  automatically generated toString model, talk about heuristic coding
+        return "Course { " +
+                /*"id=" + id +*/
+                " title='" + title + '\'' +
                 ", code='" + code + '\'' +
                 '}';
     }
