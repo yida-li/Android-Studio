@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -24,22 +25,27 @@ import java.util.ArrayList;
 public class ListDataActivity extends AppCompatActivity {
 
     private static final String TAG = "ListDataActivity";
-
+    private TextView textView;
     DatabaseHelper mDatabaseHelper;
-
+    ValuesStorage mValuEhlper;
     private ListView mListView;
-
+    private ListView listView2;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_layout);
         mListView = (ListView) findViewById(R.id.listView);
-        mDatabaseHelper = new DatabaseHelper(this);
+        listView2 = (ListView) findViewById(R.id.listView2);
+        mDatabaseHelper=  new DatabaseHelper (this);
+        mValuEhlper = new ValuesStorage (this);
+        textView=(TextView)findViewById(R.id.textView);
+        populateListView1();
+        populateListView2();
 
-        populateListView();
     }
 
-    private void populateListView() {
+
+    private void populateListView1() {
         Log.d(TAG, "populateListView: Displaying data in the ListView.");
 
         //get the data and append to a list
@@ -78,6 +84,32 @@ public class ListDataActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+
+
+    private void populateListView2() {
+        Log.d(TAG, "populateListView: Displaying data in the ListView.");
+
+        //get the data and append to a list
+        Cursor data = mValuEhlper.getData();
+        ArrayList<String> listData = new ArrayList<>();
+        String temp="";
+        while(data.moveToNext()){
+            //get the value from the database in column 1
+            //then add it to the ArrayList
+            listData.add(data.getString(1)+" "+data.getString(2)+" "+data.getString(3));
+            temp+=data.getString(1);
+            temp+=data.getString(2);
+            temp+=data.getString(3);
+        }
+        textView.setText(temp);
+        //create the list adapter and set the adapter
+        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
+        listView2.setAdapter(adapter);
+
+
     }
 
     /**

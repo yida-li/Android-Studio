@@ -61,7 +61,7 @@ public class EditDataActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mDatabaseHelper.deleteName(selectedID,selectedName);
                 editable_item.setText("");
-                toastMessage("removed from database");
+                toastMessage("removed from database, Content will be removed from cache table after exiting list page");
             }
         });
 
